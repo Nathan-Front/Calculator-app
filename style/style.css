@@ -469,6 +469,8 @@ button:hover{
         display: flex;
         justify-content: center;
         align-items: center;
+
+        height: 1.7em;
     }
     .input-container span label{
         margin: 0;
@@ -553,12 +555,13 @@ button:hover{
     }
     .radiobtn1::before{
         content: '';
-        height: 1em;
-        width:1em;
         border-radius: 50%;
         position: absolute;
-        left: .47em;
-        top: 0;  
+
+        height: 1.2em;
+        width:1.2em;
+        left: .45em;
+        top: -.15em;  
     }
     .radiobtn1.activeState1::before{
         background-color: var(--theme1-key-toggle-background);
@@ -571,12 +574,13 @@ button:hover{
     }
     .radiobtn2::before{
         content: '';
-        height: 1em;
-        width:1em;
         border-radius: 50%;
         position: absolute;
-        left: .47em;
-        top: 0;
+
+        height: 1.2em;
+        width:1.2em;
+        left: .45em;
+        top: -.15em;  
     }
     .radiobtn2.activeState2::before{
         background-color: var(--theme2-key-toggle-background);
@@ -589,12 +593,13 @@ button:hover{
     }
     .radiobtn3::before{
         content: '';
-        height: 1em;
-        width:1em;
         border-radius: 50%;
         position: absolute;
-        left: .47em;
-        top: 0;
+
+        height: 1.2em;
+        width:1.2em;
+        left: .45em;
+        top: -.15em;  
     }
     .radiobtn3.activeState3::before{
         background-color: var(--theme3-key-pure-cyan-background);
