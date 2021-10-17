@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+    <title>Calculator app</title>
+</head>
+<body id="body" class="body-background active1">
+    <main class="main--container">
+        <div class="radio-button-container radioCon1">
+            <h1>Calc</h1>
+            <form action="#">
+                <div class="color-picker-container">
+                    <span class="color-picker"></span>
+                    <p class="color-scheme">theme</p> 
+                </div>
+                <div class="input-container">
+                    <span>
+                        <label for="radio1">1</label>
+                        <label for="radio2">2</label>
+                        <label for="radio3">3</label>
+                    </span>
+                    <span class="span-container2">
+                        <input onclick="firstButton()" type="radio" class="radiobtn1 activeState1" id="radio1" name="radio">
+                        <input onclick="secondButton()" type="radio" class="radiobtn2" id="radio2" name="radio">
+                        <input onclick="thirdButton()" type="radio" class="radiobtn3" id="radio3" name="radio">
+                    </span>
+                </div>
+            </form>
+        </div>
+        <span data-visible class="visible-value display1">0</span>
+        <span data-hidden class="hidden-value"></span>
+        <div data-keycontainer class="button-container keyPad1">
+            <button data-numbers class="numpadKey numBtn1">1</button>
+            <button data-numbers class="numpadKey numBtn1">2</button>
+            <button data-numbers class="numpadKey numBtn1">3</button>
+            <button data-numbers class="numpadKey numBtn1">4</button>
+            <button data-numbers class="numpadKey numBtn1">5</button>
+            <button data-numbers class="numpadKey numBtn1">6</button>
+            <button data-numbers class="numpadKey numBtn1">7</button>
+            <button data-numbers class="numpadKey numBtn1">8</button>
+            <button data-numbers class="numpadKey numBtn1">9</button>
+            <button data-numbers class="numpadKey numBtn1">0</button>
+            <button data-numbers class="numpadKey numBtn1">.</button>
+            <button data-operation class="numpadKey numBtn1">+</button>
+            <button data-operation class="numpadKey numBtn1">-</button>
+            <button data-operation class="numpadKey numBtn1">/</button>
+            <button data-operation class="numpadKey numBtn1">x</button>
+            <button data-equal class="equalBtn equalBtn1">=</button>
+            <button data-delete class="numpadKeyED resetDEL1">Del</button>
+            <button data-reset class="numpadKeyED resetDEL1">reset</button>
+        </div>
+    </main>
+<script src="javascript/script.js"></script>
+<script src="javascript/radiobutton.js"></script>   
+<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script> 
+<script>
+    
+    let panel = document.getElementById("body");
+    const pickr = Pickr.create({
+    el: '.color-picker',
+    theme: 'classic', 
+    default: '#BC5050',
+    defaultRepresentation: 'HSLA',
+    swatches: [
+        'rgba(244, 67, 54, 1)',
+        'rgba(233, 30, 99, 0.95)',
+        'rgba(156, 39, 176, 0.9)',
+        'rgba(103, 58, 183, 0.85)',
+        'rgba(63, 81, 181, 0.8)',
+        'rgba(33, 150, 243, 0.75)',
+        'rgba(3, 169, 244, 0.7)',
+        'rgba(0, 188, 212, 0.7)',
+        'rgba(0, 150, 136, 0.75)',
+        'rgba(76, 175, 80, 0.8)',
+        'rgba(139, 195, 74, 0.85)',
+        'rgba(205, 220, 57, 0.9)',
+        'rgba(255, 235, 59, 0.95)',
+        'rgba(255, 193, 7, 1)'
+    ],
+    components: {
+        // Main components
+        preview: true,
+        opacity: true,
+        hue: true,
+        // Input / output Options
+        interaction: {
+            hex: true,
+            rgba: true,
+            hsla: true,
+            hsva: true,
+            cmyk: true,
+            input: true,
+            clear: false,
+            save: false
+        }
+    }
+});
+pickr.on('change', (...args) => {
+    let colorchanger  = args[0].toRGBA();
+    panel.style.backgroundColor = `rgba(${colorchanger[0]},${colorchanger[1]},${colorchanger[2]},${colorchanger[3]})`
+})
+
+</script>
+</body>
+</html>
