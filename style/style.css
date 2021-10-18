@@ -490,3 +490,17 @@ button:hover{
         padding: 0;  
     }
 }
+@media only screen and (max-width:375px){
+    .radiobtn1::before{
+        left: .4em;
+        top: -.12em;  
+    }
+    .radiobtn2::before{
+        left: .4em;
+        top: -.12em; 
+    }
+    .radiobtn3::before{
+        left: .4em;
+        top: -.12em; 
+    }
+}
