@@ -273,12 +273,13 @@ button:hover{
 }
 .radiobtn1.activeState1::before{
     background-color: var(--theme1-key-toggle-background);
+    opacity: 1;
 }
 .radiobtn2{
     width: 10px;
     height: auto;
     position: relative;
-    visibility: hidden;
+    opacity: 0;
 }
 .radiobtn2::before{
     content: '';
@@ -296,7 +297,7 @@ button:hover{
     width: 10px;
     height: auto;
     position: relative;
-    visibility: hidden;
+    opacity: 0;
 }
 .radiobtn3::before{
     content: '';
@@ -548,6 +549,8 @@ button:hover{
         width: 1px;
         height: auto;
         position: relative;
+        display: none;
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -557,11 +560,11 @@ button:hover{
     .radiobtn1::before{
         content: '';
         border-radius: 50%;
-        position: absolute;
+        position: relative;
 
         height: 1.2em;
         width:1.2em;
-        left: 25%;
+        right: 0;
         top: 0;  
         display: flex;
         justify-content: center;
@@ -573,7 +576,13 @@ button:hover{
         width: 1px;
         height: auto;
         position: relative;
-        visibility: hidden;
+        
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
     }
     .radiobtn2::before{
         content: '';
@@ -582,14 +591,25 @@ button:hover{
 
         height: 1.2em;
         width:1.2em;
-        left: 0em;
-        top: 0em;  
+        right: 0;
+        top: 0;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
     }
     .radiobtn3{
         width: 1px;
         height: auto;
         position: relative;
-        visibility: hidden;
+        
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
     }
     .radiobtn3::before{
         content: '';
@@ -598,7 +618,12 @@ button:hover{
 
         height: 1.2em;
         width:1.2em;
-        left: 0em;
-        top: 0em;  
+        right: 0;
+        top: 0;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;  
     }
 }
