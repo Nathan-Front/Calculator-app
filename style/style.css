@@ -548,6 +548,11 @@ button:hover{
         width: 1px;
         height: auto;
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
     }
     .radiobtn1::before{
         content: '';
@@ -556,10 +561,13 @@ button:hover{
 
         height: 1.2em;
         width:1.2em;
-        left: 0em;
-        top: 0em;  
-        padding: 0;
+        left: 25%;
+        top: 0;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0;
+        padding: 0;
     }
     .radiobtn2{
         width: 1px;
