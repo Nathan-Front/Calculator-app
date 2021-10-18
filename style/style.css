@@ -556,8 +556,10 @@ button:hover{
 
         height: 1.2em;
         width:1.2em;
-        left: .45em;
+        left: 0em;
         top: 0em;  
+        padding: 0;
+        margin: 0;
     }
     .radiobtn2{
         width: 1px;
@@ -572,7 +574,7 @@ button:hover{
 
         height: 1.2em;
         width:1.2em;
-        left: .45em;
+        left: 0em;
         top: 0em;  
     }
     .radiobtn3{
@@ -588,7 +590,7 @@ button:hover{
 
         height: 1.2em;
         width:1.2em;
-        left: .45em;
+        left: 0em;
         top: 0em;  
     }
 }
