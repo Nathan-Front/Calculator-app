@@ -292,6 +292,7 @@ button:hover{
 }
 .radiobtn2.activeState2::before{
     background-color: var(--theme2-key-toggle-background);
+    opacity: 1;
 }
 .radiobtn3{
     width: 10px;
@@ -310,6 +311,7 @@ button:hover{
 }
 .radiobtn3.activeState3::before{
     background-color: var(--theme3-key-pure-cyan-background);
+    opacity: 1;
 }
 .body-background.active1{
     background-color: var(--theme1-main-background);
