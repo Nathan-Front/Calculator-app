@@ -545,7 +545,7 @@ button:hover{
         cursor: pointer;
     }
     .radiobtn1{
-        width: 10px;
+        width: 1px;
         height: auto;
         position: relative;
     }
@@ -560,7 +560,7 @@ button:hover{
         top: 0em;  
     }
     .radiobtn2{
-        width: 10px;
+        width: 1px;
         height: auto;
         position: relative;
         visibility: hidden;
@@ -576,7 +576,7 @@ button:hover{
         top: 0em;  
     }
     .radiobtn3{
-        width: 10px;
+        width: 1px;
         height: auto;
         position: relative;
         visibility: hidden;
