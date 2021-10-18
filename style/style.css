@@ -96,9 +96,6 @@ label:hover{
     align-items: flex-end;
     grid-gap: .5em;
 }
-.color-picker-container span{
-    border: 1px solid red;
-}
 .color-picker-container p{
     margin: 0 1.5em 0 0;
     padding: 0;
@@ -158,8 +155,6 @@ label:hover{
     background-color: var(--theme1-screen-background);
     border-radius: 10px;
     font-size: var(--font-size);
-    white-space: initial;
-    white-space: nowrap;
     overflow: hidden;
     color: white;
 }
@@ -455,7 +450,8 @@ button:hover{
         margin: 0 1.5em 0 0;
         padding: 0;
         text-transform: uppercase;
-        font-size: .765em;
+
+        font-size: .665em;
     }
     .input-container{
         width: 5em;
@@ -561,10 +557,7 @@ button:hover{
         height: 1.2em;
         width:1.2em;
         left: .45em;
-        top: -.15em;  
-    }
-    .radiobtn1.activeState1::before{
-        background-color: var(--theme1-key-toggle-background);
+        top: 0em;  
     }
     .radiobtn2{
         width: 10px;
@@ -580,10 +573,7 @@ button:hover{
         height: 1.2em;
         width:1.2em;
         left: .45em;
-        top: -.15em;  
-    }
-    .radiobtn2.activeState2::before{
-        background-color: var(--theme2-key-toggle-background);
+        top: 0em;  
     }
     .radiobtn3{
         width: 10px;
@@ -599,9 +589,6 @@ button:hover{
         height: 1.2em;
         width:1.2em;
         left: .45em;
-        top: -.15em;  
-    }
-    .radiobtn3.activeState3::before{
-        background-color: var(--theme3-key-pure-cyan-background);
+        top: 0em;  
     }
 }
