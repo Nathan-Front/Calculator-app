@@ -400,143 +400,34 @@ button:hover{
     color: white;
 }
 @media only screen and (max-width:1000px){
-
     body{
         width: auto;
     }
     .main--container{
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-
         width: 100%;
         margin: 1.5em 2.5em 1.5em 1.5em;
     }
-    label:hover{
-        cursor: pointer;
-    }
     .radio-button-container{
-        margin: 0;
-        display: flex;
-        align-items: center;
-        height: 5em;
-        position: relative;
-        color: white;
-
         width: 100%;
         padding: 0 .5em;
     }
-    .radio-button-container h1{
-        margin: 0;
-        padding: 0;
-        font-size: 1.8em;
-    }
-    .radio-button-container form{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        position: absolute;
-        right: 0;
-    }
-    .color-picker-container{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: flex-end;
-        grid-gap: .5em;
-    }
-    .color-picker-container span{
-        border: 1px solid red;
-    }
     .color-picker-container p{
-        margin: 0 1.5em 0 0;
-        padding: 0;
-        text-transform: uppercase;
-
         font-size: .665em;
     }
-    .input-container{
-        width: 5em;
-        white-space: wrap;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
     .input-container span{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
         height: 1.7em;
     }
-    .input-container span label{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        font-size: .765em;
-    }
-    .input-container span input{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .span-container2{
-        background-color: var(--theme1-toggle-keypad-background);
-        height: 1.5em;
-        border-radius: 20px;
-    }
     .visible-value{
-        margin: 0;
-        width: 100%;
-        height: 3em;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        background-color: var(--theme1-screen-background);
-        border-radius: 10px;
-        font-size: var(--font-size);
-        white-space: initial;
-        white-space: nowrap;
-        overflow: hidden;
-        color: white;
-
         padding: 0 .5em 0 0;
         margin: 0;
     }
-    .hidden-value{
-        display: none;
-    }
     .button-container{
-        margin: 1.5em 0 0 0;
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        background-color: var(--theme1-toggle-keypad-background);
-        border-radius: 10px;
-        border: none;
-
         width: 95%;
         padding: 1em;
         grid-gap: 1em;
         height: 20em;
-
     }
     .button-container button{
-        margin: .5em;
-        padding: 0;
-        height: 2em;
-        border: none;
-        border-radius: 5px;
-        font-size: 1.8em;
-        font-weight: var(--font-weight);
-
         width: 100%;
         height: 100%;
         margin: 0;
@@ -544,15 +435,7 @@ button:hover{
         justify-self: center;
         font-size: 1.3em;
     }
-    button:hover{
-        cursor: pointer;
-    }
     .radiobtn1{
-        width: 1px;
-        height: auto;
-        position: relative;
-        display: none;
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -560,14 +443,10 @@ button:hover{
         padding: 0;
     }
     .radiobtn1::before{
-        content: '';
-        border-radius: 50%;
-        position: relative;
-
         height: 1.2em;
         width:1.2em;
-        right: .47em;
-        top: 0;  
+        right: 1em;
+        top: -.15em;  
         display: flex;
         justify-content: center;
         align-items: center;
@@ -575,11 +454,6 @@ button:hover{
         padding: 0;
     }
     .radiobtn2{
-        width: 1px;
-        height: auto;
-        position: relative;
-        
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -587,14 +461,10 @@ button:hover{
         padding: 0;
     }
     .radiobtn2::before{
-        content: '';
-        border-radius: 50%;
-        position: absolute;
-
         height: 1.2em;
         width:1.2em;
-        right: .47em;
-        top: 0;  
+        right: 1em;
+        top: -.15em; 
         display: flex;
         justify-content: center;
         align-items: center;
@@ -602,11 +472,6 @@ button:hover{
         padding: 0;
     }
     .radiobtn3{
-        width: 1px;
-        height: auto;
-        position: relative;
-        
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -614,14 +479,10 @@ button:hover{
         padding: 0;
     }
     .radiobtn3::before{
-        content: '';
-        border-radius: 50%;
-        position: absolute;
-
         height: 1.2em;
         width:1.2em;
-        right: .47em;
-        top: 0;  
+        right: 1em;
+        top: -.15em; 
         display: flex;
         justify-content: center;
         align-items: center;
